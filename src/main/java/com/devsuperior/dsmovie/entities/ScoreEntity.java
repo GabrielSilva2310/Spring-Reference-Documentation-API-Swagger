@@ -2,6 +2,7 @@ package com.devsuperior.dsmovie.entities;
 
 import java.util.Objects;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;

@@ -13,12 +13,14 @@ import com.devsuperior.dsmovie.services.ScoreService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/scores")
 @Tag(name = "Scores", description = "Controller for Score movie")
+@SecurityRequirement(name = "bearerAuth")
 public class ScoreController {
 	
 	@Autowired
